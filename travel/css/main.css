@@ -83,6 +83,12 @@ a, a:focus, a:hover {
   text-decoration: none;
   outline: 0;
 }
+
+.txts{
+  text-align: justify;
+  word-break: break-all;
+}
+
 .col_bg{
   background: #D8D8D8;
 }
