@@ -65,15 +65,19 @@
                 </div>
             </div>
 
-			<!-- chi tiết -->
-			<div>
-			<p class="txts" style="text-align: justify;">&nbsp Du lịch Paris – kinh đô của sự xa hoa lộng lẫy của ánh sáng, hấp dẫn bởi những lâu đài cổ kính, bãi biển quyến rũ,
-            núi non và miền đồng quê xanh tươi. Không biết phải dùng bao nhiêu mỹ từ để miêu tả hết nét đẹp của thành phố Paris. 
-            Một thành phố có nền văn minh rực rỡ lâu đời nhất lục địa già, là ngôi sao về văn hóa và thời trang trên bầu trời thế giới 
-            và là mảnh đất lãng mạn của tình yêu.
+			<!-- chi tiết -bài viết-->
+			<?php
+				if (isset($_GET['tour_id'])){
+					$id = $_GET['tour_id'];
+					$result_post = $db->get_info_post($id);
+					$row_post = $result_post->fetch_assoc();
+					?>
+						<p style="text-align: justify;"><?php echo $row_post['post']; ?></p>
+						<br>
+					<?php
+				}
 
-            Paris luôn là điểm dừng chân đầu tiên của du khách trong tour du lịch Châu Âu của mình. Vậy hãy cùng travelista tìm hiểu vẻ đẹp hào hoa lãng mạn của Paris khiến hàng triệu người say đắm này nha.
-            </p>
+			?>
             <strong> Bài viết chi tiết
                 <a href="https://deviet.vn/diem-den/paris/?gclid=EAIaIQobChMIyPSTmoCK5gIVGqyWCh28EQFEEAAYASAAEgI9_fD_BwE"> tại đây </a>
             </strong>

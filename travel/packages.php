@@ -157,7 +157,7 @@
 									</li>
 									<li class="d-flex justify-content-between align-items-center">
 										<span>Giá mỗi người</span>
-										<a href="#" class="price-btn"><?php echo $row_tour['cost']; ?>đ</a>
+										<a href="place_detail.php?tour_id=<?php echo $row_tour['tour_id']; ?>" class="price-btn"><?php echo $row_tour['cost']; ?>đ</a>
 									</li>													
 								</ul>
 							</div>
@@ -199,3 +199,4 @@
 	<!-- End footer -->	
 </body>
 </html>
+
