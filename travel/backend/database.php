@@ -66,6 +66,18 @@ class Database {
 		$result = $this->conn->query($sql);
 		return $result;
 	}
+
+	public function get_info_post($tour_id) {
+		$sql = "SELECT * FROM tour WHERE tour_id = '$tour_id'";
+		$result = $this->conn->query($sql);
+		return $result;
+	}
+
+	public function get_info_schedule($schedule_id) {
+		$sql = "SELECT * FROM tour_schedule WHERE schedule_id = '$schedule_id'";
+		$result = $this->conn->query($sql);
+		return $result;
+	}
 }
 
 ?>
