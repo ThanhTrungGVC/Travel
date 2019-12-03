@@ -30,7 +30,6 @@
         width: 100%;
         height: 250px;
     }
-
     .fav-stit {
         font-size: 28px;
         position: absolute;
@@ -46,24 +45,20 @@
         justify-content: center;
         line-height: 1.2;
     }
-
     .card {
         border: 1px solid rgba(26, 115, 190, .3);
         margin-bottom: 15px;
         background: aliceblue;
     }
-
     .card-header {
         border-bottom: 0;
         padding: 5px 15px;
     }
-
     .btn-link {
         width: 100%;
         text-align: justify;
         color: blue !important;
     }
-
     .lichtrinh-stt {
         position: absolute;
         background: url(//deviet.vn/wp-content/themes/gctheme/assets/css/../images/new/calendar.svg);
@@ -75,7 +70,6 @@
         padding-top: 22px;
         color: #1a73be;
     }
-
     #accordion {
         margin-left: 59px;
     }
@@ -132,7 +126,6 @@
             <br>
             <?php
                 }
-
             ?>
             <strong> Bài viết chi tiết
                 <a
@@ -343,73 +336,31 @@
 
             <!-- chi tiết -->
             <div id="accordion">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
+            <?php
+                $id = $row_post['schedule_id'];
+                $result_schedule = $db->get_info_schedule($id);
+                while ($row_schedule = $result_schedule->fetch_assoc()) {
+                ?>
+                    <div class="card">
+                    <div class="card-header" id="heading<?php echo $row_schedule['tour_schedule_id']; ?>">
                         <h5 class="mb-0">
-                            <div class="lichtrinh-stt">1</div>
-                            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="false" aria-controls="collapseOne">
-                                Collapsible Group Item #1
+                            <div class="lichtrinh-stt"><?php echo $row_schedule['tour_schedule_id']; ?></div>
+                            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse<?php echo $row_schedule['tour_schedule_id']; ?>"
+                                aria-expanded="false" aria-controls="collapse<?php echo $row_schedule['tour_schedule_id']; ?>">
+                                <?php echo $row_schedule['title']; ?>
                             </a>
                         </h5>
                     </div>
 
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div id="collapse<?php echo $row_schedule['tour_schedule_id']; ?>" class="collapse" aria-labelledby="heading<?php echo $row_schedule['tour_schedule_id']; ?>" data-parent="#accordion">
                         <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
+                            <?php echo $row_schedule['content']; ?>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h5 class="mb-0">
-                            <div class="lichtrinh-stt">1</div>
-                            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                                aria-expanded="false" aria-controls="collapseTwo">
-                                Collapsible Group Item #2
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h5 class="mb-0">
-                            <div class="lichtrinh-stt">1</div>
-                            <a class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                                aria-expanded="false" aria-controls="collapseThree">
-                                Collapsible Group Item #3
-                            </a>
-                        </h5>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                        <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
-                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
-                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
-                            probably haven't heard of them accusamus labore sustainable VHS.
-                        </div>
-                    </div>
-                </div>
+                <?php
+                }
+            ?>
             </div>
 
         </div>
