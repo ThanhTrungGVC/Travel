@@ -140,7 +140,7 @@
 
 
     <!-- Start giới thiệu hình ảnh -->
-    <section class="section-gap">
+    <section class="price-area section-gap">
         <div class="container">
             <!-- lable -->
             <div class="row d-flex justify-content-center">
@@ -382,9 +382,143 @@
 
             <!-- chi tiết -->
             <div>
-                <p class="txts" style="text-align: justify;">
-                    https://deviet.vn/tour/tour-phap-thuy-sy-y-vatican-10-ngay-bay-qr-lich-kh-2020/
-                </p>
+                <!--Giá tour-->
+                <div class="d-flex pb-4">
+                    <img class="pr-3" src="https://deviet.vn/wp-content/themes/gctheme/images/new/coin.svg"
+                        data-src="https://deviet.vn/wp-content/themes/gctheme/images/new/coin.svg">
+                    <div class="tdetail-pitem-wrap">
+                        <h3 class="s20"> Giá tour
+                            <div class="text-info pt-2">
+                                <span class="s28"> 57.900.000 đ </span>
+                            </div>
+                        </h3>
+                        <ul class="tdetail-sale"></ul>
+                    </div>
+                </div>
+                <!--End Giá tour-->
+                <!--Giá báo gồm-->
+                <div class="d-flex pb-4">
+                    <img class="pr-3" src="https://deviet.vn/wp-content/themes/gctheme/images/new/check.svg"
+                        data-src="https://deviet.vn/wp-content/themes/gctheme/images/new/check.svg">
+                    <div class="tdetail-pitem-wrap">
+                        <h3 class="s20 pb-3">Giá bao gồm</h3>
+                        <ul>
+                            <ul class="tdetail-lcontent" >
+                                <li style="text-align: justify;">Phí tư vấn, hoàn thiện hồ sơ, khai form, đặt lịch hẹn
+                                    xin visa</li>
+                                <li style="text-align: justify;">Phí dịch thuật, công chứng và hoàn tất hồ sơ nộp visa
+                                </li>
+                                <li style="text-align: justify;">Phí nộp visa Schengen cho Đại sứ quán và phí nộp cho
+                                    trung tâm tiếp nhận hồ sơ được ủy quyền của Đại sứ quán</li>
+                                <li style="text-align: justify;">Vé máy bay khứ hồi quốc tế của hàng không cao cấp 5 sao
+                                    Qatar Airlines, một trong những hãng hàng không lớn nhất thế giới.</li>
+                                <li style="text-align: justify;">Xe đón và tiễn sân bay cho đoàn tại Việt Nam</li>
+                                <li style="text-align: justify;">Xe thăm quan tại Châu Âu chất lượng cao, lái xe kinh
+                                    nghiệm theo chương trình (xe phục vụ tối đa 11 tiếng / ngày)</li>
+                                <li style="text-align: justify;">Trưởng đoàn đưa đoàn đi từ Việt Nam</li>
+                                <li style="text-align: justify;">Khách sạn từ 4* sao tiêu chuẩn Châu Âu (02 khách ngủ 1
+                                    phòng)</li>
+                                <li style="text-align: justify;">Ăn các bữa theo chương trình</li>
+                                <li style="text-align: justify;">Vé thăm quan theo chương trình.</li>
+                                <li style="text-align: justify;">Thuế, phí dành cho khách du lịch tại các thành phố theo
+                                    chương trình.</li>
+                                <li style="text-align: justify;">Bảo hiểm du lịch toàn cầu, mức bồi thường tối đa 1 tỉ
+                                    VND</li>
+                                <li style="text-align: justify;">Quà tặng từ tour Dế Việt Châu Âu</li>
+                                <li style="text-align: justify;">Hỗ trợ 24/7 trong suốt thời gian thăm quan Châu Âu</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <!--End Giá báo gồm-->
+                <!--Giá không báo gồm-->
+                <div class="d-flex pb-4">
+                    <img class="pr-3" src="https://deviet.vn/wp-content/themes/gctheme/images/new/x.svg"
+                        data-src="https://deviet.vn/wp-content/themes/gctheme/images/new/x.svg">
+                    <div class="tdetail-pitem-wrap">
+                        <h3 class="s20 pb-3">Giá không bao gồm:</h3>
+                        <ul>
+                            <ul class="tdetail-lcontent" >
+                                <li style="text-align: justify;">Tip cho trưởng đoàn, hướng dẫn viên và lái xe&nbsp;: 7
+                                    Euro / khách / ngày</li>
+                                <li style="text-align: justify;">Chi phí cá nhân&nbsp;: giặt là, điện thoại, đồ uống,
+                                    hành lý quá cước, các chi phí cá nhân phát sinh không có trong phần bao gồm …</li>
+                                <li style="text-align: justify;">Phụ thu ở khách sạn phòng đơn.</li>
+                                <li style="text-align: justify;">Chi phí cho HDV và lái xe phục vụ (nếu có yêu cầu ngoài
+                                    giờ).</li>
+                                <li style="text-align: justify;">Phương tiện vận chuyển ngoài giờ của chương trình (nếu
+                                    có yêu cầu).</li>
+                                <li style="text-align: justify;">Các chi phí khác không đề cập trong mục dịch vụ đã bao
+                                    gồm.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <!--End Giá không báo gồm-->
+                <!--Trẻ em-->
+                <div class="d-flex pb-4">
+                    <img class="pr-3" src="https://deviet.vn/wp-content/themes/gctheme/images/new/child.svg"
+                        data-src="https://deviet.vn/wp-content/themes/gctheme/images/new/child.svg">
+                    <div class="tdetail-pitem-wrap">
+                        <h3 class="s20 pb-3">Trẻ em</h3>
+                        <ul>
+                            <ul class="tdetail-lcontent" >
+                                <li style="text-align: justify;">Trẻ em dưới 2 tuổi: 30% tổng giá trị tour và ngủ cùng
+                                    bố mẹ</li>
+                                <li style="text-align: justify;">Trẻ em từ 2 đến 11 tuổi: 85% tổng giá trị tour và ngủ
+                                    cùng bố mẹ</li>
+                                <li style="text-align: justify;">Trẻ em từ 2 đến 11 tuổi: 95% tổng giá trị tour và ngủ
+                                    giường riêng</li>
+                                <li style="text-align: justify;">Trẻ em từ 12 tuổi trở lên: 100% tổng giá trị tour và
+                                    ngủ giường riêng</li>
+                                <li style="text-align: justify;">Tổng số cháu được hưởng chính sách cho trẻ em không quá
+                                    3 cháu / đoàn. Các gia đình ký hợp đồng và đặt cọc trước được ưu tiên chính sách
+                                    giảm giá cho trẻ em. Các gia đình đăng ký sau khi đoàn đã có đủ 3 trẻ em được giảm
+                                    giá, thì các cháu đăng ký sau sẽ được tính như người lớn.</li>
+                                <li style="text-align: justify;">Chính sách giảm giá cho trẻ em chỉ áp dụng khi 1 trẻ em
+                                    đi cùng 02 người lớn và ngủ cùng phòng với 02 người lớn</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <!--End Trẻ em-->
+                <!--Ký hợp đồng và đặt cọc tour-->
+                <div class="d-flex pb-4">
+                    <img class="pr-3" src="https://deviet.vn/wp-content/themes/gctheme/images/new/sign.svg"
+                        data-src="https://deviet.vn/wp-content/themes/gctheme/images/new/sign.svg">
+                    <div class="tdetail-pitem-wrap">
+                        <h3 class="s20 pb-3">Ký hợp đồng và đặt cọc tour</h3>
+                        <ul>
+                            <h6 class="m-0 pb-1" style="text-align: justify;">Quy trình đăng ký và tham gia tour: </h6>
+                            <ul class="tdetail-lcontent pb-2" style="text-align: justify;">
+                                <li>Quý khách vui lòng đem theo Hộ chiếu (bản chính), ký hợp đồng và đóng tiền đặt
+                                    cọc 20.000.000 VND / 1 người khi đăng ký tour</li>
+                                <li>Dế Việt Châu Âu sẽ hướng dẫn thủ tục xin visa, hoàn thiện các mẫu đơn visa,
+                                    đăng ký ngày nộp hồ sơ, khách hàng phải có mặt để nộp hồ sơ và mang theo hồ sơ bản
+                                    gốc để đối chiếu.</li>
+                                <li>Hoàn tất thanh toán tiền tour khi có kết quả visa hoặc 2 tuần trước khi khởi hành.
+                                </li>
+                                <li>Tham gia họp đoàn trước 7 ngày so với ngày khởi hành hoặc theo lịch của đoàn để
+                                    chuẩn bị tốt nhất cho chuyến thăm quan</li>
+                            </ul>
+                            <h6 class="m-0 pb-1" style="text-align: justify;">Trong trường hợp quý khách hủy tour:</h6>
+                            <ul class="tdetail-lcontent">
+                                <li style="text-align: justify;">Huỷ sau khi đã nộp hoặc / và có kết quả visa, đóng 10%
+                                    giá tour.</li>
+                                <li style="text-align: justify;">Trước từ 30 đến 16 ngày so với ngày khởi hành, đóng 50%
+                                    giá tour</li>
+                                <li style="text-align: justify;">Trước 15 ngày đến 8 ngày so với ngày khởi hành, đóng
+                                    75% giá tour</li>
+                                <li style="text-align: justify;">Trong vòng 7 ngày so với ngày khởi hành, đóng 100% giá
+                                    tour</li>
+                                <li style="text-align: justify;">Trong trường hợp quý khách bị từ chối visa, chúng tôi
+                                    sẽ cam kết hoàn 100% phí dịch vụ visa và tour cho quý khách. Quý khách chỉ mất
+                                    3.000.000 VND / người lớn (phí sứ quán, trung tâm</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <!--End Ký hợp đồng và đặt cọc tour-->
             </div>
         </div>
     </section>
